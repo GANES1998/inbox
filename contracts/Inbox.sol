@@ -4,7 +4,7 @@ contract Inbox {
 
     string public message;
 
-    function Inbox(string initialMessage) {
+    function Inbox(string initialMessage) public {
         message = initialMessage;
     }
 
@@ -12,7 +12,7 @@ contract Inbox {
         return message;
     }
 
-    function setMessage(string newMessage) {
+    function setMessage(string newMessage) public {
         message = newMessage;
     }
 
